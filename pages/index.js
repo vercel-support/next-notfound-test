@@ -1,9 +1,10 @@
 export async function getStaticProps({ locale }) {
-
   if (locale === "nl") {
     return {
-      notFound: true,
-    }
+      props: {
+        notFound: true,
+      },
+    };
   }
 
   return { props: {} };
